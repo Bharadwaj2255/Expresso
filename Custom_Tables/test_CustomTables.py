@@ -36,6 +36,7 @@ class Test_CustomTable(BaseClass):
         self.driver.switch_to.frame(frame1)
 
         left_grid = self.driver.find_element(By.XPATH, "//as-split-area[@class ='left-split-area as-split-area']")
+        time.sleep(3)
         left_grid.find_element(By.XPATH, "//input[@type = 'search']").send_keys("2255")
         time.sleep(3)
 
@@ -130,3 +131,4 @@ class Test_CustomTable(BaseClass):
         self.driver.find_element(By.XPATH, "//button[text() = 'Save']").click()
         save = self.driver.find_element(By.XPATH, "//div[@role = 'alert']").text
         assert "Saved success" in save
+        print("git uploaded")
