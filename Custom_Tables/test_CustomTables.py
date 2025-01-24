@@ -131,5 +131,4 @@ class Test_CustomTable(BaseClass):
         self.driver.find_element(By.XPATH, "//button[text() = 'Save']").click()
         save = self.driver.find_element(By.XPATH, "//div[@role = 'alert']").text
         assert "Saved success" in save
-        print("git uploaded")
-        print("git uploaded")
+
